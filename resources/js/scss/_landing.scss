@@ -1,0 +1,116 @@
+.search-page {
+    &__container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        text-align: center;
+        padding: 3.5rem 1.5rem 2rem 1.5rem;
+    }
+
+    &__headline {
+        font-size: 2.7rem;
+        color: var(--color-text);
+        font-family: var(--font-main);
+        margin-bottom: 1.3rem;
+        font-weight: 700;
+        letter-spacing: -1.2px;
+        line-height: 1.1;
+    }
+
+    &__subtext {
+        color: var(--color-placeholder);
+        margin-bottom: 2.7rem;
+        font-size: 1.18rem;
+        font-family: var(--font-main);
+        font-weight: 400;
+    }
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+
+    &__input {
+        width: 100%;
+        background: var(--color-surface);
+        border: none;
+        color: var(--color-text);
+        font-size: 1.18rem;
+        padding: 1.2rem 4rem 1.2rem 1.7rem;
+        border-radius: 2.5rem;
+        outline: none;
+        font-family: var(--font-main);
+        box-shadow: 0 2px 16px var(--color-shadow);
+        transition: box-shadow 0.3s, background 0.3s;
+
+        &:focus {
+            box-shadow: 0 4px 24px var(--color-shadow);
+        }
+
+        &::placeholder {
+            color: var(--color-placeholder);
+        }
+    }
+
+    &__button {
+        position: absolute;
+        right: 0.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--color-primary);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.2s;
+        box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background: var(--color-accent);
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .search-page {
+        &__headline {
+            font-size: 2rem;
+        }
+        &__subtext {
+            font-size: 1rem;
+        }
+    }
+    .search-box {
+        max-width: 100%;
+
+        &__input {
+            font-size: 1rem;
+            padding: 1rem 3.5rem 1rem 1.5rem;
+        }
+
+        &__button {
+            width: 2.2rem;
+            height: 2.2rem;
+            svg {
+                width: 0.9rem;
+                height: 0.9rem;
+            }
+        }
+    }
+}

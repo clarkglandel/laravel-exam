@@ -1,0 +1,39 @@
+.favorites {
+    margin-top: 2rem;
+    &__title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    &__list {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        background: #f8f8f8;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+        &:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__poster {
+        width: 60px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+    &__info {
+        text-align: center;
+    }
+    &__movie-title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
