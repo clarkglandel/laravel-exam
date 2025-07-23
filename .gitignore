@@ -1,24 +1,56 @@
+# Dependency directories
+/vendor/
+/node_modules/
+
+# Log files
+npm-debug.log
+yarn-error.log
 *.log
+
+# System files
 .DS_Store
+Thumbs.db
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen with changed public path
+public_html/storage
+public_html/hot
+
+# Environment and config files
 .env
 .env.backup
 .env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
-Homestead.json
 Homestead.yaml
-Thumbs.db
+Homestead.json
+auth.json
+
+# PHPUnit
+.phpunit.result.cache
+/.phpunit.cache
+
+# IDE and editor folders
+/.idea
+/.vscode
+/.fleet
+/.zed
+/.nova
+
+# PHP tools
+.phpactor.json
+
+# Vagrant
+/.vagrant
+
+# Storage
+storage/*.key
+/storage/pail
+
+# Build output
+/public/build
