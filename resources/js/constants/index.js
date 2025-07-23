@@ -17,7 +17,7 @@ export const DEFAULTS = {
         PER_PAGE: 10,
     },
     RECOMMENDATIONS_COUNT: 3,
-    SKELETON_COUNT: 10,
+    SKELETON_COUNT: 5,
 };
 
 // Error Messages
