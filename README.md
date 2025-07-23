@@ -1,6 +1,6 @@
 ## 📝 Setup & Environment Variables (Quick Guide)
 
-**Note:** This app is fully set up for Docker, Redis, and MySQL out of the box. You don’t need to install PHP or MySQL on your computer—just use Docker and you’re good to go!
+**Note:** This app is fully set up for Docker, Redis, and MySQL out of the box. You don’t need to install PHP or MySQL on your computer... just use Docker and you’re good to go!
 
 ### 1. Environment Variables
 
